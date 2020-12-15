@@ -1,0 +1,235 @@
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+pre {
+  white-space: pre-wrap ;
+}
+
+
+.area_body {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px;
+  background-color: #ffffe0;
+  border-radius: 10px;
+  color: #696969;
+}
+
+
+/* メニュー定義 */
+.area_menu {
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ff8c00;
+}
+
+.a_menu_link {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: small;
+  text-decoration: none;
+}
+
+.a_menu_link:link,
+.a_menu_link:visited,
+.a_menu_link:hover,
+.a_menu_link:active {
+  color: #696969;
+}
+
+/* カスタマイズ定義 */
+.area_custom {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-size: small;
+  background-color: #ffd700;
+  border-radius: 0px 0px 10px 10px;
+  display: none;
+}
+
+.area_custom table tr td {
+  padding-right: 10px;
+}
+
+.area_menu_icon {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 10px;
+  float: right;
+}
+
+/* 常用情報通知(通知、スケジュール、タスク)定義 */
+.area_regular {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  padding-top: 5px;
+  width: 80%;
+  height: 100%;
+  background-color: #ffc0cb;
+  border: solid 2px;
+  border-color: #db7093;
+  border-radius: 10px;
+  font-size: small;
+}
+
+.item_regular_title {
+  padding-left: 10px;
+  color: #db7093;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.item_regular {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* ファイル選択定義 */
+.area_file_select {
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: small;
+  font-weight: bold;
+  background-color: #ff8c00;
+  border-radius: 10px;
+}
+
+/* ドキュメントグループ定義 */
+.area_group {
+  margin-bottom: 20px;
+  background-color: #ffd700;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.item_group_title {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: large;
+  font-weight: bold;
+  background-color: #ff8c00;
+  border-radius: 10px;
+}
+
+.area_content_frame {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item_content_title {
+  padding-bottom: 3px;
+}
+
+.item_content_title img {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.item_content_title a {
+  padding-left: 8px;
+  text-decoration: none;
+}
+
+.item_content_title a:link,
+.item_content_title a:visited,
+.item_content_title a:hover,
+.item_content_title a:active {
+  color: #696969;
+}
+
+/* ダイアログ定義 */
+.area_dialog_back {
+  background-color: #000000; 
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;
+}
+
+.area_dialog {
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  border: 20px solid #293b6a;
+  font-size: smaller;
+}
+
+.area_dialog_frame {
+  padding: 10px;
+  text-align: left;
+  background-color:#FFFFFF;
+}
+
+/* ダイアログのサイズ計算
+    width = area_dialog
+      - (area_dialog.border * 2)
+      - (area_dialog_frame.padding * 2)
+    height = area_dialog
+      - (area_dialog.border * 2)
+      - (area_dialog_frame.padding * 2)
+      - (item_dialog_button.margin-top + button_dialog_button.height + padding * 2 + border * 2)
+      - (hr.margin * 2)px
+*/
+.item_dialog_frame_content {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* ダイアログのボタン定義 */
+.area_dialog_button {
+  text-align: center;
+}
+
+.item_dialog_button {
+  margin-top: 15px;
+  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+  text-align: center;
+}
+
+.button_dialog_button {
+  display: inline-block;
+  width: 48px;
+  height: 18px;
+  text-align: left;
+  background-color: #293b6a;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 12px;
+  border: 1px dashed #FFF;
+  box-shadow: 0px 0px 0px 5px #293b6a;/
+}
+
+.button_dialog_button:hover {
+  border-style: solid;
+}

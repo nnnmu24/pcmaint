@@ -1,0 +1,16 @@
+{
+  "name": "pcmaint",
+  "version": "1.0.0",
+  "description": "portal site for local pc",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nnnmu24/pcmaint"
+  },
+  "author": "nnnmu24",
+  "license": "MIT"
+}
