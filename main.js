@@ -38,6 +38,5 @@ app.on('ready', function() {
 // 同期IPCメッセージの受信と返信(レンダラプロセスから送られる)
 electron.ipcMain.on('synchronous-message', (event, arg) => {
     // ここにレポートファイルのパスを定義する
-//    event.returnValue = "D:\\_datas\\myproduct\\work\\logDeploy\\";
     event.returnValue = app.getAppPath() + "\\sampleReport";
 })
